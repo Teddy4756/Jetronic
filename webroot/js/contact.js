@@ -7,7 +7,7 @@ async function contact() {
 
     if (email && content) {
         console.log('je suis là!')
-        const repContact = await fetch('http://localhost:3000/contact', {
+        const repContact = await fetch('https://jetronic.ga/contact', {
             method: 'POST',
             body: JSON.stringify({ email: email, content: content }),
             headers: {"content-type" : "application/json"}
